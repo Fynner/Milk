@@ -108,6 +108,7 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onNoDoubleClick(View v) {
                 toCashierActivity();
+
             }
         });
         //商品管理
