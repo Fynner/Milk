@@ -234,6 +234,25 @@ public abstract class BaseViewActivity extends AutoLayoutActivity {
     }
 
     /**
+     * 设置搜索文本
+     *
+     * @param s 搜索文本
+     */
+    public void setSeachText(String s) {
+        if (s == null) {
+            s = "";
+        }
+        base_top_search.setText(s);
+    }
+
+    /**
+     * 清空搜索文本
+     */
+    public void clearSeachTaxt() {
+        base_top_search.setText("");
+    }
+
+    /**
      * 设置搜索样式
      *
      * @param textWatcher     写入事件监听

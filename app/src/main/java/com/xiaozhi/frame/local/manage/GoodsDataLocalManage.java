@@ -1,10 +1,11 @@
 package com.xiaozhi.frame.local.manage;
 
 import android.content.Context;
+import android.os.Handler;
 
 import com.xiaozhi.frame.configuration.Configuration;
 import com.xiaozhi.frame.local.goodsdata.GoodsData;
-import com.xiaozhi.frame.local.modle.GoodsDataModle;
+import com.xiaozhi.frame.mvp.v.activity.BaseActivity;
 import com.xiaozhi.frame.tool.file.FileManage;
 import com.xiaozhi.frame.tool.net.NetWork;
 
@@ -20,7 +21,6 @@ public class GoodsDataLocalManage extends LocalDataManage {
 
 
     private GoodsDataLocalManage() {
-
     }
 
     public static GoodsDataLocalManage getGoodsDataManage() {
@@ -36,6 +36,7 @@ public class GoodsDataLocalManage extends LocalDataManage {
 
     /**
      * 保存商品数据
+     *
      * @param context
      */
     public synchronized void saveGoodsDatas(Context context) {
@@ -58,7 +59,7 @@ public class GoodsDataLocalManage extends LocalDataManage {
      * @param context                   上下文
      * @param onGoodsDataLocalListenner 监听
      */
-    public synchronized void getGoodsDatas(Context context, OnGoodsDataLocalListenner onGoodsDataLocalListenner) {
+    public synchronized void getGoodsDatas(final Context context, OnGoodsDataLocalListenner onGoodsDataLocalListenner) {
 
         if (goodsDatas == null) {
             if (NetWork.isNetworkConnected(context)) {
