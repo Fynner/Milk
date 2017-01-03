@@ -18,7 +18,7 @@ public class TransferActivity extends BaseActivity {
     @Override
     public View initView() {
         context = this;
-        view=View.inflate(context, R.layout.activity_transfer,null);
+        view = View.inflate(context, R.layout.activity_transfer, null);
         return view;
     }
 
