@@ -63,6 +63,8 @@ public class SignActivity extends BaseActivity {
         sign_sign.setOnClickListener(new NoDoubleClickListener() {
             @Override
             public void onNoDoubleClick(View v) {
+
+
                 toMainActivity();
             }
         });

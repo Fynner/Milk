@@ -5,5 +5,6 @@ package com.xiaozhi.frame.urlkey;
  */
 
 public class SignKey {
-    public final static String SIGN="loginHelper";
+    public static final String LOGIN_KEY = "login"; //登录密钥
+
 }

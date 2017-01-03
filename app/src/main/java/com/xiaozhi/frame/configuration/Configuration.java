@@ -6,7 +6,7 @@ package com.xiaozhi.frame.configuration;
 
 public class Configuration {
 
-    public final static String URL = "http://fuzhuang.poso2o.com/";
+    public final static String URL = "http://food.poso2o.com/";
 //    public final static String URL="http://fuzhuang.poso2o.com";
 
     public final static boolean IS_PRINT = true; /* 配置是否打印 true 打印  false 不许可打印 对应的工具类 tool.print.Print **/

@@ -5,6 +5,6 @@ package com.xiaozhi.frame.action;
  */
 
 public class SignAction {
-   public static final String LOGIN_ACTION="loginHelper";
+   public static final String LOGIN_ACTION="login";
 
 }

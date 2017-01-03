@@ -10,7 +10,7 @@
 
     <Node
         CacheTime="0"
-        Key="loginHelper"
+        Key="login"
         NetType="post"
         Url="user.htm" />
 

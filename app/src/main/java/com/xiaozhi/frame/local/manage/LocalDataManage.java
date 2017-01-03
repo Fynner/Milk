@@ -6,8 +6,7 @@ package com.xiaozhi.frame.local.manage;
 
 public class LocalDataManage {
     public static final String GOODS_DATA = "goods_data";
-
-
+    public static final String USER_DATA = "goods_data";
 
 
 }
