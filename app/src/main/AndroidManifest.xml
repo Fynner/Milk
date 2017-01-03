@@ -21,7 +21,7 @@
 
         <activity
             android:name="com.xiaozhi.frame.main.activity.MainActivity"
-            android:launchMode="standard"
+            android:launchMode="singleTask"
             android:screenOrientation="sensorLandscape"></activity> <!--主页面-->
         <activity
             android:name="com.xiaozhi.frame.main.activity.GoodsActivity"
@@ -51,8 +51,13 @@
             android:screenOrientation="sensorLandscape"></activity> <!--设置页面-->
 
         <activity
-            android:name="com.xiaozhi.frame.main.activity.SignActivity"
+            android:name="com.xiaozhi.frame.main.activity.TransferActivity"
             android:launchMode="standard"
+            android:screenOrientation="sensorLandscape"></activity> <!--交接页面-->
+
+        <activity
+            android:name="com.xiaozhi.frame.main.activity.SignActivity"
+            android:launchMode="singleTask"
             android:screenOrientation="sensorLandscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

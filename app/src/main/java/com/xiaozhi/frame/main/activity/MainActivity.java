@@ -141,8 +141,8 @@ public class MainActivity extends BaseActivity {
         main_transfer.setOnClickListener(new NoDoubleClickListener() {
             @Override
             public void onNoDoubleClick(View v) {
-                toSignActivity();
-                finish();
+                toTransferActivity();
+                
             }
 
 
@@ -202,6 +202,12 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+    }
+
+    private void toTransferActivity() {
+        Intent intent = new Intent();
+        intent.setClass(context, TransferActivity.class);
+        startActivity(intent);
     }
 
     private void toSetActivity() {
